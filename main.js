@@ -60,6 +60,14 @@ workBtnContainer.addEventListener('click', (e) => {
     return;
   }
 
+  //Remove selection from the previous item and select the new one
+  const active = document.querySelector('.category__btn.active');
+  active.classList.remove('active');
+
+  const target =
+    e.target.nodeName === 'BUTTON' ? e.target : e.target.parentNode;
+  target.classList.add('active');
+
   projects.forEach((project) => {
     if (filter === '*' || filter === project.dataset.type) {
       project.classList.remove('invisible');

@@ -95,15 +95,14 @@ p {
   display: flex;
   justify-content: space-between;
   background-color: transparent;
-  color: var(--color-white);
   align-items: center;
   padding: 16px;
   transition: all 300ms ease;
+  color: var(--color-white);
 }
 
 #navbar.navbar--dark {
   background-color: var(--color-mint);
-  /* padding: 8px; */
 }
 
 .navbar__menu {
@@ -121,14 +120,13 @@ p {
   margin: 0 4px;
   cursor: pointer;
   border-radius: var(--size-border-radius);
-}
-
-.navbar__menu__item.active {
-  border-bottom: 3px solid var(--color-white);
+  font-weight: var(--weight-bold);
+  border-bottom: 3px solid transparent;
 }
 
 .navbar__menu__item:hover {
   background-color: var(--color-light-mint);
+  border-color: var(--color-white);
 }
 
 .navbar__toggle-btn {
