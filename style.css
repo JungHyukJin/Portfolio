@@ -423,6 +423,23 @@ p {
   color: var(--color-yellow);
 }
 
+.arrow-up {
+  padding: 0;
+  position: fixed;
+  font-size: 50px;
+  right: 20px;
+  bottom: 50px;
+  color: var(--color-black);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 300ms ease-in;
+}
+
+.arrow-up.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
   .navbar__toggle-btn {
