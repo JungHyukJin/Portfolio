@@ -381,7 +381,7 @@ p {
 }
 
 .project__description h3 {
-  color: var(--color-white);
+  color: var(--color-orange);
 }
 
 .project__description h3:after {
@@ -446,11 +446,13 @@ p {
 @media screen and (max-width: 768px) {
   .navbar__toggle-btn {
     display: block;
+    color: white;
   }
 
   #navbar {
     flex-direction: column;
     align-items: flex-start;
+    background-color: var(--color-mint);
   }
 
   .navbar__menu {
@@ -460,8 +462,8 @@ p {
     display: none;
   }
 
-  .navbar__menu__item.active {
-    border-bottom: 3px solid var(--color-white);
+  .navbar__menu.open {
+    display: block;
   }
 
   .navbar__menu__item:hover {
