@@ -89,6 +89,7 @@ p {
 
 /* Navbar */
 #navbar {
+  z-index: 1;
   position: fixed;
   width: 100%;
   display: flex;
@@ -166,6 +167,11 @@ p {
   margin: 24px;
   padding: 8px 12px;
   color: var(--color-white);
+  transition: transform 300ms ease;
+}
+
+.home__contact:hover {
+  transform: scale(1.1);
 }
 
 /* Section common except Home*/
