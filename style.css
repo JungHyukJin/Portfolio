@@ -99,10 +99,12 @@ p {
   padding: 16px;
   transition: all 300ms ease;
   color: var(--color-white);
+  border: none;
 }
 
 #navbar.navbar--dark {
   background-color: var(--color-mint);
+  border-bottom: 3px solid #0f8185;
 }
 
 .navbar__menu {
@@ -147,6 +149,7 @@ p {
 }
 
 .home__avatar {
+  border: 3px solid var(--color-white);
   border-radius: 30px;
   height: 280px;
   width: 230px;
@@ -175,7 +178,7 @@ p {
 /* Section common except Home*/
 .section {
   margin: auto;
-  padding: 50px;
+  padding: 120px 50px;
   text-align: center;
 }
 
@@ -307,6 +310,7 @@ p {
   border-radius: var(--size-border-radius);
   font-size: var(--font-regular);
   padding: 8px 48px;
+  position: relative;
 }
 
 .category__btn:hover,
@@ -329,9 +333,9 @@ p {
   height: 24px;
   display: inline-block;
   line-height: 24px;
-  position: relative;
+  position: absolute;
   top: -20px;
-  left: 4px;
+  right: 12px;
   opacity: 0;
   transition: all 300ms ease;
 }
@@ -444,6 +448,20 @@ p {
 
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
+  :root {
+    /* Font size */
+    --font-large: 30px;
+    --font-medium: 18px;
+    --font-regular: 16px;
+    --font-small: 14px;
+    --font-micro: 12px;
+  }
+
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
   .navbar__toggle-btn {
     display: block;
     color: white;
@@ -453,6 +471,12 @@ p {
     flex-direction: column;
     align-items: flex-start;
     background-color: var(--color-mint);
+  }
+
+  .navbar__logo {
+    font-size: 25px;
+    display: flex;
+    align-items: center;
   }
 
   .navbar__menu {
@@ -495,5 +519,15 @@ p {
 
   .project {
     flex-grow: 1;
+  }
+
+  .category__btn {
+    margin: 4px;
+    width: 100%;
+  }
+
+  .category__count {
+    margin-top: 4px;
+    margin-right: 14px;
   }
 }
