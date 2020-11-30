@@ -190,32 +190,15 @@ p {
 .about__majors {
   margin-top: 30px;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.major__icon {
-  margin: 10px;
-  border: 3px solid var(--color-blue);
-  border-radius: 20px;
-}
-
-.major__icon > i {
-  font-size: 70px;
-}
-
-.major__icon > i > span {
-  font-size: 70px;
-  margin-top: 10px;
   justify-content: center;
 }
 
-.front-end {
-  width: 50%;
-}
-
-.back-end {
-  width: 30%;
+.major__icon {
+  border: 3px solid var(--color-blue);
+  border-radius: 20px;
+  width: 100%;
+  margin: auto;
+  flex-wrap: wrap;
 }
 
 .major__type {
@@ -224,18 +207,32 @@ p {
   padding: 20px;
 }
 
-.fab {
-  color: var(--color-blue);
-}
-
-.major__icon > i {
-  margin: 30px 30px;
-}
-
-.major__icon > i > span {
-  color: black;
+.icons {
+  padding: 20px;
   display: flex;
-  font-size: var(--font-regular);
+  justify-content: center;
+  align-items: center;
+}
+
+.icons > i {
+  color: var(--color-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 80px;
+  margin: auto;
+}
+
+.icons .language {
+  margin-top: 4px;
+  font-size: var(--font-micro);
+  color: var(--color-grey);
+  font-weight: bold;
+}
+
+.back-end {
+  width: 30%;
 }
 
 /* Skill */
@@ -347,6 +344,7 @@ p {
 
 .project {
   position: relative;
+  border-radius: 10px;
   width: 280px;
   height: 250px;
   margin: 2px;
@@ -366,6 +364,7 @@ p {
 }
 
 .project__description {
+  border-radius: 10px;
   background-color: black;
   width: 100%;
   height: 100%;
@@ -445,8 +444,8 @@ p {
   pointer-events: auto;
 }
 
-/* For below 768px screen width */
-@media screen and (max-width: 768px) {
+/* For below 840px screen width */
+@media screen and (max-width: 840px) {
   :root {
     /* Font size */
     --font-large: 30px;
@@ -494,15 +493,8 @@ p {
     background-color: var(--color-light-mint);
   }
 
-  .about__majors {
-    flex-direction: column;
-    /* text-align: center; */
-    width: 100%;
-  }
-
   .major__icon {
     margin-bottom: 38px;
-    width: 100%;
   }
 
   .skillSet {
@@ -515,10 +507,6 @@ p {
 
   .tools {
     border-radius: 0;
-  }
-
-  .project {
-    flex-grow: 1;
   }
 
   .category__btn {
