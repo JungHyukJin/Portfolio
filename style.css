@@ -4,11 +4,10 @@
   --color-white: #ffffff;
   --color-light-white: #eeeeee;
   --color-dark-white: #bdbdbd;
-  --color-mint: #16b6a0;
-  --color-light-mint: #48c2b2;
   --color-dark-grey: #4d4d4d;
   --color-grey: #616161;
   --color-light-grey: #7c7979;
+  --color-dark-blue: #3f93d9;
   --color-blue: #73aace;
   --color-yellow: #fff7d1;
   --color-orange: #feb546;
@@ -103,8 +102,8 @@ p {
 }
 
 #navbar.navbar--dark {
-  background-color: var(--color-mint);
-  border-bottom: 3px solid #0f8185;
+  background-color: #3f93d9;
+  border-bottom: 2px solid #106cb8;
 }
 
 .navbar__menu {
@@ -127,8 +126,8 @@ p {
 }
 
 .navbar__menu__item:hover {
-  background-color: var(--color-light-mint);
   border-color: var(--color-white);
+  transform: scale(1.1);
 }
 
 .navbar__toggle-btn {
@@ -150,9 +149,9 @@ p {
 
 .home__avatar {
   border: 3px solid var(--color-white);
-  border-radius: 30px;
-  height: 280px;
-  width: 230px;
+  border-radius: 40px;
+  height: 100%;
+  width: 280px;
 }
 
 .home__title,
@@ -315,7 +314,7 @@ p {
 
 .category__btn:hover,
 .category__btn.active {
-  background-color: var(--color-mint);
+  background-color: var(--color-dark-blue);
   color: var(--color-white);
 }
 
@@ -402,7 +401,7 @@ p {
 
 /* Contact */
 #contact {
-  background-color: var(--color-mint);
+  background-color: var(--color-dark-blue);
 }
 
 .contact__title,
@@ -470,7 +469,8 @@ p {
   #navbar {
     flex-direction: column;
     align-items: flex-start;
-    background-color: var(--color-mint);
+    background-color: #3f93d9;
+    border-bottom: 2px solid #106cb8;
   }
 
   .navbar__logo {
